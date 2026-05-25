@@ -19,3 +19,8 @@ variable "ami_id" {
     description = "EC2 AMI id"
   type = string
 }
+
+//cidr for vpc
+variable "cidr" {
+  default = "10.0.0.0/16"
+}

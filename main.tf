@@ -39,3 +39,7 @@ resource "aws_instance" "myec2" {
 #   key_name   = "terraform-demo-abhi"
 #   public_key = file("C:/Users/acelucidUser/.ssh/id_rsa.pub")
 # }
+
+resource "aws_vpc" "myvpc" {
+  cidr_block= var.cidr
+}
